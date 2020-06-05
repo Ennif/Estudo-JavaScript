@@ -4,7 +4,13 @@
         <meta charset="UTF-8">
         
             <title> Teste Inicial </title>
-    
+
+            <style>
+                body{
+                    font : normal 20pt arial;
+
+                }
+                </style>
         </head>
    
             
@@ -20,20 +26,33 @@
              window.alert('Variavel nome = '+ nome)  //exibir dado prompt
             </script>
         -->
-        <script>
-            var n1 = Number(window.prompt('Numero 01'))     //'Number.parseInt()' Inteiro / 'Number.parseFloat()' Real / 'Number()''
-            var n2 = Number.parseInt(window.prompt('Numero 02'))
+        <!--
+          <script>
+                var n1 = Number(window.prompt('Numero 01'))     //'Number.parseInt()' Inteiro / 'Number.parseFloat()' Real / 'Number()''
+                var n2 = Number.parseInt(window.prompt('Numero 02'))
+                
+                var s = n1 + n2 
+
+                window.alert(`Soma entre ${n1} e ${n2} = ${String(s)} `  )  // s.toString()
             
-            var s = n1 + n2 
+                // prompt retorna String, nescessario converter.
+                // + concatenação unirá os caractere
+                // (number + number) = adição
+                // (string + string) = concatenação
+            
+          </script>
+        -->
 
-            window.alert(`Soma entre ${n1} e ${n2} = ${String(s)} `  )  // s.toString()
-           
-            // prompt retorna String, nescessario converter.
-            // + concatenação unirá os caractere
-            // (number + number) = adição
-            // (string + string) = concatenação
-        
-        </script>
+            <script>
+                var txt = window.prompt("Digite texto")
+                document.write(`O texto possue ${txt.length} lestras </br>`)
+                document.write(`Texto Maiusculo ${txt.toUpperCase()}</br>`)
+                document.write(`Texto Minusculo ${txt.toLowerCase()}`)
 
+
+                //lenght = Numero de caractere
+                //.toUpperCase() = caracteres Maiusculo.
+                //.toLowerCase() = Minusculo
+            </script>       
     </body>
 </html>
