@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experimentando DOM</title>
+</head>
+<body>
+    <h1> Dom Testes </h1> 
+        <p> Resultado </p>
+        <p> <strong>Resultado02</strong> <br/> </p>
+        <p> Resultado03 </p>
+        <p> Resultado04 </p>
+
+        <div id="msg" > Click aqui </div>
+        
+        <script>
+           var corpo = window.document.body
+           var p1 = window.document.getElementsByTagName('p')[2]
+           var p2 = window.document.getElementsByTagName('p')[1]
+           
+           var d = window.document.querySelector('div#msg')
+           //var d = window.document.getElementById('msg')
+
+           window.document.write(p2.innerHTML) 
+           
+           window.document.write(d.innerText)
+            d.style.color = 'pink'
+           d.innerText = 'Nãoclick'
+           
+           //corpo.style.background = 'red'
+           //p1.style.color= 'blue'
+        </script>
+
+</body>
+</html>
